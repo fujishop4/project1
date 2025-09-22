@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <link rel="stylesheet" href="assets/style.css">
   <meta charset="UTF-8">
-  <meta="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>[Nama Situs] - Free SSH Account</title>
   <meta name="description" content="Buat akun SSH gratis, cepat, dan aman di [Nama Situs]. Nikmati koneksi terenkripsi dengan server stabil.">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXX"
@@ -39,85 +39,113 @@
     </div>
   </section>
 
-  <!-- Iklan Atas -->
-  <div class="container mx-auto my-8 px-4">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-XXXX"
-         data-ad-slot="1111111111"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-
-  <!-- Fitur Section -->
-  <section class="container mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
-    <div class="bg-white shadow rounded-xl p-6 text-center">
-      <h3 class="text-xl font-semibold mb-2">Gratis</h3>
-      <p class="text-gray-600">Semua akun SSH bisa dibuat gratis tanpa biaya tersembunyi.</p>
-    </div>
-    <div class="bg-white shadow rounded-xl p-6 text-center">
-      <h3 class="text-xl font-semibold mb-2">Aman</h3>
-      <p class="text-gray-600">Koneksi terenkripsi dengan protokol SSH yang melindungi privasi Anda.</p>
-    </div>
-    <div class="bg-white shadow rounded-xl p-6 text-center">
-      <h3 class="text-xl font-semibold mb-2">Mudah</h3>
-      <p class="text-gray-600">Pembuatan akun hanya butuh beberapa klik, tanpa registrasi rumit.</p>
-    </div>
-  </section>
-
-  <!-- Iklan Tengah -->
-  <div class="container mx-auto my-8 px-4">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-XXXX"
-         data-ad-slot="2222222222"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-
-  <!-- Blog Preview -->
+  <!-- Server Section -->
   <section class="container mx-auto px-6 py-12">
-    <h2 class="text-2xl font-bold mb-6 text-center">Artikel Terbaru</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white shadow rounded-xl p-4">
-        <h3 class="font-semibold mb-2"><a href="/blog.html" class="hover:underline">Cara Menggunakan SSH di Android</a></h3>
-        <p class="text-gray-600 text-sm">Panduan singkat menggunakan aplikasi SSH di perangkat Android.</p>
+    <h2 class="text-2xl font-bold mb-6 text-center">Pilih Server</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white shadow rounded-xl p-6 text-center">
+        <h3 class="text-xl font-semibold">🇸🇬 Singapore</h3>
+        <p class="text-gray-600">Server cepat & stabil di Asia.</p>
+        <a href="/ssh-account.html" class="text-blue-600 font-semibold hover:underline">Buat Akun</a>
       </div>
-      <div class="bg-white shadow rounded-xl p-4">
-        <h3 class="font-semibold mb-2"><a href="/blog.html" class="hover:underline">Tutorial SSH di Windows</a></h3>
-        <p class="text-gray-600 text-sm">Langkah-langkah menggunakan SSH Client di Windows 10/11.</p>
+      <div class="bg-white shadow rounded-xl p-6 text-center">
+        <h3 class="text-xl font-semibold">🇯🇵 Japan</h3>
+        <p class="text-gray-600">Server dengan latency rendah di Asia Timur.</p>
+        <a href="/ssh-account.html" class="text-blue-600 font-semibold hover:underline">Buat Akun</a>
       </div>
-      <div class="bg-white shadow rounded-xl p-4">
-        <h3 class="font-semibold mb-2"><a href="/blog.html" class="hover:underline">Apa Itu SSH?</a></h3>
-        <p class="text-gray-600 text-sm">Penjelasan dasar tentang SSH dan manfaatnya untuk keamanan internet.</p>
+      <div class="bg-white shadow rounded-xl p-6 text-center">
+        <h3 class="text-xl font-semibold">🇺🇸 United States</h3>
+        <p class="text-gray-600">Server kencang untuk akses global.</p>
+        <a href="/ssh-account.html" class="text-blue-600 font-semibold hover:underline">Buat Akun</a>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6 text-center">
+        <h3 class="text-xl font-semibold">🇩🇪 Germany</h3>
+        <p class="text-gray-600">Server Eropa dengan kecepatan tinggi.</p>
+        <a href="/ssh-account.html" class="text-blue-600 font-semibold hover:underline">Buat Akun</a>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6 text-center">
+        <h3 class="text-xl font-semibold">🇳🇱 Netherlands</h3>
+        <p class="text-gray-600">Server stabil untuk koneksi aman.</p>
+        <a href="/ssh-account.html" class="text-blue-600 font-semibold hover:underline">Buat Akun</a>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6 text-center">
+        <h3 class="text-xl font-semibold">🇧🇷 Brazil</h3>
+        <p class="text-gray-600">Server Amerika Selatan untuk koneksi lokal.</p>
+        <a href="/ssh-account.html" class="text-blue-600 font-semibold hover:underline">Buat Akun</a>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6 text-center">
+        <h3 class="text-xl font-semibold">🇮🇳 India</h3>
+        <p class="text-gray-600">Server Asia Selatan dengan latency rendah.</p>
+        <a href="/ssh-account.html" class="text-blue-600 font-semibold hover:underline">Buat Akun</a>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6 text-center">
+        <h3 class="text-xl font-semibold">🇬🇧 United Kingdom</h3>
+        <p class="text-gray-600">Server cepat di Eropa Barat.</p>
+        <a href="/ssh-account.html" class="text-blue-600 font-semibold hover:underline">Buat Akun</a>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6 text-center">
+        <h3 class="text-xl font-semibold">🇦🇺 Australia</h3>
+        <p class="text-gray-600">Server stabil di Oceania.</p>
+        <a href="/ssh-account.html" class="text-blue-600 font-semibold hover:underline">Buat Akun</a>
       </div>
     </div>
   </section>
 
-  <!-- Iklan Bawah -->
-  <div class="container mx-auto my-8 px-4">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-XXXX"
-         data-ad-slot="3333333333"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
+  <!-- Statistik & Grafik -->
+  <section class="container mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold mb-6 text-center">Statistik Server</h2>
+    <div class="bg-white shadow rounded-xl p-6">
+      <canvas id="serverChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Script Chart.js -->
+  <script>
+    async function loadStats() {
+      try {
+        const res = await fetch("server-stats.json?ts=" + new Date().getTime());
+        const data = await res.json();
+        const labels = Object.keys(data.servers);
+        const values = Object.values(data.servers);
+
+        if (window.serverChart) {
+          window.serverChart.data.labels = labels;
+          window.serverChart.data.datasets[0].data = values;
+          window.serverChart.update();
+        } else {
+          const ctx = document.getElementById("serverChart").getContext("2d");
+          window.serverChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: labels,
+              datasets: [{
+                label: "Jumlah Akun Aktif",
+                data: values,
+                backgroundColor: "rgba(37, 99, 235, 0.6)"
+              }]
+            },
+            options: {
+              responsive: true,
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        }
+      } catch (err) {
+        console.error("Gagal load server-stats.json", err);
+      }
+    }
+
+    loadStats();
+    setInterval(loadStats, 30000); // update tiap 30 detik
+  </script>
 
   <!-- Footer -->
   <footer class="bg-blue-600 text-white py-6 mt-12">
     <div class="container mx-auto text-center text-sm">
-      <div class="mb-4 space-x-4">
-        <a href="/about.html" class="hover:underline">Tentang Kami</a>
-        <a href="/support.html" class="hover:underline">Support</a>
-        <a href="/privacy-policy.html" class="hover:underline">Privacy Policy</a>
-        <a href="/terms.html" class="hover:underline">Terms of Service</a>
-        <a href="/disclaimer.html" class="hover:underline">Disclaimer</a>
-        <a href="/sitemap.html" class="hover:underline">Sitemap</a>
-      </div>
       <p>© 2025 [Nama Situs]. All rights reserved.</p>
     </div>
   </footer>
