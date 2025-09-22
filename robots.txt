@@ -1,4 +1,8 @@
 User-agent: *
-Disallow: /server/
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
 Allow: /
+
 Sitemap: https://namasitus.com/sitemap.xml
