@@ -1,0 +1,5 @@
+[
+  { "name": "Singapore", "total": 100, "used": 45 },
+  { "name": "Japan", "total": 100, "used": 80 },
+  { "name": "United States", "total": 100, "used": 60 }
+]
