@@ -1,39 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://namasitus.com/</loc>
-    <priority>1.0</priority>
+    <loc>https://www.fastssh-clone.com/index.html</loc>
   </url>
   <url>
-    <loc>https://namasitus.com/ssh-account</loc>
-    <priority>0.9</priority>
+    <loc>https://www.fastssh-clone.com/blog.html</loc>
   </url>
   <url>
-    <loc>https://namasitus.com/tutorial</loc>
-    <priority>0.8</priority>
+    <loc>https://www.fastssh-clone.com/artikel/apa-itu-ssh.html</loc>
   </url>
   <url>
-    <loc>https://namasitus.com/blog</loc>
-    <priority>0.7</priority>
+    <loc>https://www.fastssh-clone.com/artikel/perbedaan-ssh-vpn-proxy.html</loc>
   </url>
   <url>
-    <loc>https://namasitus.com/support</loc>
-    <priority>0.6</priority>
+    <loc>https://www.fastssh-clone.com/artikel/ssh-di-android-termux.html</loc>
   </url>
   <url>
-    <loc>https://namasitus.com/about</loc>
-    <priority>0.6</priority>
+    <loc>https://www.fastssh-clone.com/artikel/ssh-di-windows.html</loc>
   </url>
   <url>
-    <loc>https://namasitus.com/privacy-policy</loc>
-    <priority>0.5</priority>
+    <loc>https://www.fastssh-clone.com/artikel/ssh-gratis.html</loc>
   </url>
   <url>
-    <loc>https://namasitus.com/terms</loc>
-    <priority>0.5</priority>
+    <loc>https://www.fastssh-clone.com/artikel/vpn-vs-ssh.html</loc>
   </url>
   <url>
-    <loc>https://namasitus.com/disclaimer</loc>
-    <priority>0.5</priority>
+    <loc>https://www.fastssh-clone.com/artikel/memilih-server-ssh.html</loc>
+  </url>
+  <url>
+    <loc>https://www.fastssh-clone.com/artikel/ssh-tunneling.html</loc>
+  </url>
+  <url>
+    <loc>https://www.fastssh-clone.com/artikel/aplikasi-ssh-client.html</loc>
+  </url>
+  <url>
+    <loc>https://www.fastssh-clone.com/artikel/ssh-disconnect.html</loc>
+  </url>
+  <url>
+    <loc>https://www.fastssh-clone.com/artikel/port-22-ssh.html</loc>
+  </url>
+  <url>
+    <loc>https://www.fastssh-clone.com/artikel/openvpn-wireguard-ssh.html</loc>
+  </url>
+  <url>
+    <loc>https://www.fastssh-clone.com/artikel/ssh-untuk-gaming.html</loc>
+  </url>
+  <url>
+    <loc>https://www.fastssh-clone.com/artikel/buat-akun-ssh.html</loc>
+  </url>
+  <url>
+    <loc>https://www.fastssh-clone.com/artikel/adsense-approval.html</loc>
   </url>
 </urlset>
