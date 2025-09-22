@@ -1,1 +1,125 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Support & FAQ</title></head><body><h1>Support & FAQ</h1><form method='POST' action='server/contact.php'><label>Nama:</label><input type='text' name='nama'><br><label>Email:</label><input type='email' name='email'><br><label>Pesan:</label><textarea name='pesan'></textarea><br><button type='submit'>Kirim</button></form></body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support & FAQ - [Nama Situs]</title>
+  <meta name="description" content="Halaman Support & FAQ untuk bantuan penggunaan SSH gratis di [Nama Situs].">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-blue-600">[Nama Situs]</h1>
+      <nav class="space-x-6">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/ssh-account.html" class="hover:text-blue-600">SSH Account</a>
+        <a href="/tutorial.html" class="hover:text-blue-600">Tutorial</a>
+        <a href="/blog.html" class="hover:text-blue-600">Blog</a>
+        <a href="/support.html" class="hover:text-blue-600 font-semibold">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-blue-600 text-white py-12 text-center">
+    <h2 class="text-3xl font-bold mb-2">Support & FAQ</h2>
+    <p>Butuh bantuan? Cek pertanyaan umum atau hubungi kami.</p>
+  </section>
+
+  <!-- FAQ -->
+  <main class="container mx-auto px-6 py-12 space-y-12">
+    <section class="bg-white shadow rounded-xl p-6">
+      <h3 class="text-2xl font-bold mb-4 text-blue-600">❓ Pertanyaan Umum (FAQ)</h3>
+      <div class="space-y-4 text-gray-700">
+        <details class="border rounded-lg p-3">
+          <summary class="font-semibold cursor-pointer">Berapa lama akun SSH aktif?</summary>
+          <p class="mt-2">Biasanya akun aktif <b>3 - 7 hari</b> tergantung server yang dipilih.</p>
+        </details>
+        <details class="border rounded-lg p-3">
+          <summary class="font-semibold cursor-pointer">Kenapa akun SSH saya disconnect?</summary>
+          <p class="mt-2">Biasanya karena server penuh, akun expired, atau koneksi internet tidak stabil.</p>
+        </details>
+        <details class="border rounded-lg p-3">
+          <summary class="font-semibold cursor-pointer">Apakah layanan ini gratis?</summary>
+          <p class="mt-2">Ya, semua akun SSH di situs ini <b>100% gratis</b>.</p>
+        </details>
+        <details class="border rounded-lg p-3">
+          <summary class="font-semibold cursor-pointer">Bagaimana cara memperpanjang akun SSH?</summary>
+          <p class="mt-2">Jika akun expired, silakan buat akun baru melalui halaman <a href="/ssh-account.html" class="text-blue-600 hover:underline">SSH Account</a>.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="bg-white shadow rounded-xl p-6">
+      <h3 class="text-2xl font-bold mb-4 text-blue-600">📩 Hubungi Kami</h3>
+      <form id="contactForm" class="space-y-4 max-w-lg">
+        <div>
+          <label class="block text-sm font-medium mb-1">Nama</label>
+          <input type="text" name="nama" required 
+                 class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300">
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" name="email" required 
+                 class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300">
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Pesan</label>
+          <textarea name="pesan" rows="4" required 
+                    class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300"></textarea>
+        </div>
+        <button type="submit" 
+                class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700">
+          Kirim Pesan
+        </button>
+      </form>
+      <div id="contactSuccess" class="hidden mt-4 text-green-600 font-semibold">✅ Pesan berhasil dikirim!</div>
+      <div id="contactError" class="hidden mt-4 text-red-600 font-semibold">❌ Gagal mengirim pesan. Coba lagi.</div>
+    </section>
+  </main>
+
+  <!-- Script AJAX -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+
+      try {
+        const res = await fetch("/server/contact.php", { method: "POST", body: formData });
+        const data = await res.json();
+
+        if (data.status === "success") {
+          document.getElementById("contactSuccess").classList.remove("hidden");
+          document.getElementById("contactError").classList.add("hidden");
+          e.target.reset();
+        } else {
+          document.getElementById("contactError").textContent = data.message;
+          document.getElementById("contactError").classList.remove("hidden");
+        }
+      } catch {
+        document.getElementById("contactError").classList.remove("hidden");
+      }
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-6 mt-12">
+    <div class="container mx-auto text-center text-sm">
+      <div class="mb-4 space-x-4">
+        <a href="/about.html" class="hover:underline">Tentang Kami</a>
+        <a href="/support.html" class="hover:underline">Support</a>
+        <a href="/privacy-policy.html" class="hover:underline">Privacy Policy</a>
+        <a href="/terms.html" class="hover:underline">Terms of Service</a>
+        <a href="/disclaimer.html" class="hover:underline">Disclaimer</a>
+        <a href="/sitemap.html" class="hover:underline">Sitemap</a>
+      </div>
+      <p>© 2025 [Nama Situs]. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
