@@ -1,0 +1,1 @@
+<?php header('Content-Type: application/json'); echo json_encode(['status'=>'success','message'=>'Dummy contact form - gunakan PHPMailer di production']); ?>
