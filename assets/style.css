@@ -1,1 +1,88 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navigasi */
+nav {
+  background: #222;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(120deg, #1abc9c, #16a085);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Container umum */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* List */
+.container ul {
+  list-style: disc inside;
+  margin: 15px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
