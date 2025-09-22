@@ -1,10 +1,9 @@
-# ðŸš€ FastSSH Clone Website
+# FastSSH Clone Website
 
-Website ini adalah clone sederhana dari **fastssh.com** dengan penyesuaian agar **legal, SEO-ready, dan siap untuk Google AdSense**.
+Website ini adalah clone sederhana dari fastssh.com dengan penyesuaian agar legal, SEO-ready, dan siap untuk Google AdSense.
 
-## ðŸ“‚ Struktur Folder
+## Struktur Folder
 
-```
 / (root domain)
 â”‚â”€â”€ index.html                â†’ Halaman utama (home)
 â”‚â”€â”€ ssh-account.html          â†’ Daftar server SSH + link create
@@ -27,30 +26,29 @@ Website ini adalah clone sederhana dari **fastssh.com** dengan penyesuaian agar 
 â”‚    â”œâ”€â”€ api.php              â†’ API dummy buat akun SSH
 â”‚    â”œâ”€â”€ contact.php          â†’ Kirim pesan (dummy, bisa diganti PHPMailer SMTP)
 â”‚    â””â”€â”€ vendor/              â†’ Folder PHPMailer (jika pakai composer)
-```
 
-## âš™ï¸ Fitur
+## Fitur
 
-- âœ… **Legal Pages Lengkap** â†’ Privacy, Disclaimer, Terms of Service, About.
-- âœ… **SEO Tools** â†’ sitemap.xml, sitemap.html, robots.txt, ads.txt.
-- âœ… **Form Buat Akun SSH (Dummy API)** â†’ `server/api.php`.
-- âœ… **Form Kontak** â†’ `support.html` + `server/contact.php`.
-- âœ… **Ready for Google AdSense**.
+- Legal Pages Lengkap â†’ Privacy, Disclaimer, Terms of Service, About.
+- SEO Tools â†’ sitemap.xml, sitemap.html, robots.txt, ads.txt.
+- Form Buat Akun SSH (Dummy API) â†’ server/api.php.
+- Form Kontak â†’ support.html + server/contact.php.
+- Ready for Google AdSense.
 
-## ðŸ”§ Cara Instalasi
+## Cara Instalasi
 
 1. Upload semua file ke hosting (cPanel / VPS).
 2. Pastikan folder `/server/` bisa menjalankan PHP.
 3. Edit bagian berikut sesuai kebutuhan:
-   - `ads.txt` â†’ ganti `pub-0000000000000000` dengan **Publisher ID AdSense**.
-   - `server/contact.php` â†’ ganti dengan email adminmu atau gunakan **PHPMailer SMTP**.
+   - `ads.txt` â†’ ganti `pub-0000000000000000` dengan Publisher ID AdSense.
+   - `server/contact.php` â†’ ganti dengan email adminmu atau gunakan PHPMailer SMTP.
    - `sitemap.xml` â†’ ganti domain `https://namasitus.com` dengan domainmu.
 
-## ðŸ“Œ Catatan
+## Catatan
 
 - `api.php` masih dummy (tidak benar-benar membuat akun SSH). Jika ingin real provisioning, butuh integrasi dengan VPS (misalnya via command SSH).
-- Untuk form kontak yang lebih aman, gunakan **PHPMailer + SMTP Gmail / Hosting**.
+- Untuk form kontak yang lebih aman, gunakan PHPMailer + SMTP Gmail / Hosting.
 
-## ðŸ“ Lisensi
+## Lisensi
 
-Proyek ini dibuat sebagai **template edukasi** dan bisa dikembangkan bebas untuk kebutuhan pribadi/komersial.
+Proyek ini dibuat sebagai template edukasi dan bisa dikembangkan bebas untuk kebutuhan pribadi/komersial.
