@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /server/
+Allow: /
+Sitemap: https://namasitus.com/sitemap.xml
