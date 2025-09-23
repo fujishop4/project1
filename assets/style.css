@@ -111,6 +111,10 @@ footer {
     color: #ffffff;
     transition: color 0.3s ease;
 }
+/* --- Override Bootstrap Navbar Background --- */
+.navbar {
+  background-color: #000 !important;
+}
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #bbbbbb;
 }
