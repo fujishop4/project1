@@ -3,243 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ADIJAYA STORE VPN 2025</title>
+  <title>ADIJAYA VPN STORE 2025</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      transition: background 0.3s, color 0.3s;
-    }
-    .hero {
-      background: linear-gradient(135deg, #007bff, #6610f2);
-      color: white;
-      padding: 3rem 1rem;
-      text-align: center;
-      border-radius: 0 0 30px 30px;
-      margin-bottom: 2rem;
-    }
-    .hero img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      margin-bottom: 1rem;
-      background: #fff;
-    }
-    .card {
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-    }
-    .whatsapp-btn {
-      background: #25d366;
-      color: white;
-      font-weight: bold;
-      margin-top: 5px;
-    }
-    .whatsapp-btn:hover {
-      background: #1ebe5d;
-      color: white;
-    }
-    .order-btn {
-      background: #007bff;
-      color: white;
-      font-weight: bold;
-      margin-top: 5px;
-    }
-    .order-btn:hover {
-      background: #0056b3;
-      color: white;
-    }
-    footer {
-      margin-top: 2rem;
-      padding: 1rem;
-      text-align: center;
-      border-top: 1px solid #ddd;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    .floating-wa {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25d366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      z-index: 999;
-      text-decoration: none;
-    }
-    .floating-wa:hover {
-      background: #1ebe5d;
-      color: white;
-    }
-  </style>
 </head>
 <body>
-
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">ADIJAYA VPN</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#kuota">Kuota VPN</a></li>
-          <li class="nav-item"><a class="nav-link" href="#konfig">Konfig</a></li>
-          <li class="nav-item"><a class="nav-link" href="#aktif">Masa Aktif</a></li>
-          <li class="nav-item"><a class="nav-link" href="#unli">Unli Bizz</a></li>
-          <li class="nav-item"><a class="nav-link" href="#ssh">Free SSH</a></li>
-        </ul>
-        <button id="toggleTheme" class="btn btn-outline-light ms-3">🌙</button>
-      </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero">
-    <img src="logo.png" alt="ADIJAYA VPN Logo">
-    <h1>🌐 ADIJAYA STORE VPN 2025</h1>
-    <p class="lead">🔥 Ready Kuota & Konfig VPN Termurah!</p>
+  <section class="hero text-center p-5 bg-primary text-white">
+    <img src="logo.png" alt="ADIJAYA VPN Logo" style="width:100px;height:100px;border-radius:50%;background:#fff;padding:5px;">
+    <h1>ADIJAYA STORE VPN 2025</h1>
+    <p>🔥 Ready Kuota & Konfig VPN Termurah!</p>
   </section>
 
-  <div class="container">
-
-    <!-- Kuota -->
-    <h2 class="mb-3" id="kuota">📦 Kuota VPN</h2>
-    <div class="card mb-4">
-      <div class="card-body">
-        <h4 class="card-title">✅ XL Edukasi 15GB | 7 Hari</h4>
-        <p>💰 Rp 12.000 (Free Konfig 7day)</p>
-        <a href="https://wa.me/6281214726068" class="btn order-btn w-100">💬 Chat Admin</a>
-        <a href="https://wa.me/6281214726068?text=Halo%20Admin,%20saya%20ingin%20beli%20XL%20Edukasi%2015GB" class="btn whatsapp-btn w-100">🛒 Order Sekarang</a>
+  <div class="container py-4">
+    <h2 id="produk">📦 Produk Kuota VPN</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3"><div class="card-body">
+          <h5>XL Edukasi 15GB | 7 Hari</h5><p>Rp 12.000</p>
+        </div></div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-3"><div class="card-body">
+          <h5>XL Conference 15GB | 7 Hari</h5><p>Rp 13.000</p>
+        </div></div>
       </div>
     </div>
 
-    <!-- Konfig -->
-    <h2 class="mb-3 mt-5" id="konfig">⚡ Konfig & Inject</h2>
-    <div class="card mb-4">
-      <div class="card-body">
-        <h4 class="card-title">💬 Mau beli Konfig aja?</h4>
-        <p>👉 Chat admin untuk harga konfigurasi VPN.</p>
-        <a href="https://wa.me/6281214726068" class="btn order-btn w-100">💬 Chat Admin</a>
-      </div>
+    <h2 id="ssh" class="mt-4">🌍 Free SSH</h2>
+    <div class="row">
+      <div class="col-md-4"><a href="ssh-account.html">🇸🇬 Singapore</a></div>
+      <div class="col-md-4"><a href="ssh-account.html">🇺🇸 USA</a></div>
+      <div class="col-md-4"><a href="ssh-account.html">🇩🇪 Germany</a></div>
     </div>
 
-    <!-- Masa Aktif -->
-    <h2 class="mb-3 mt-5" id="aktif">📆 Paket Masa Aktif</h2>
-    <div class="card mb-4">
-      <div class="card-body">
-        <ul>
-          <li>XL 1 Bulan : Rp 5.000</li>
-          <li>AXIS 1 Bulan : Rp 7.500</li>
-          <li>TELKOMSEL 1 Bulan : Rp 15.000</li>
-        </ul>
-        <a href="https://wa.me/6281214726068" class="btn order-btn w-100">💬 Chat Admin</a>
-      </div>
-    </div>
-
-    <!-- Unli Bizz -->
-    <h2 class="mb-3 mt-5" id="unli">🔰 XL Unli Bizz Lite</h2>
-    <div class="card mb-4">
-      <div class="card-body">
-        <p>Paket Inject / VPN Unlimited (Lite)</p>
-        <p>Harga: Rp45.000 - Rp50.000</p>
-        <a href="https://wa.me/6281214726068" class="btn order-btn w-100">💬 Chat Admin</a>
-      </div>
-    </div>
-
+    <h2 class="mt-4">📊 Statistik Server</h2>
+    <canvas id="serverChart"></canvas>
   </div>
 
-  <!-- SSH Section -->
-  <section class="container mx-auto px-6 py-12" id="ssh">
-    <h2 class="text-2xl font-bold mb-6 text-center">🌍 Free SSH Server - ADIJAYA VPN</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white shadow rounded-xl p-6 text-center">
-        <h3 class="text-xl font-semibold">🇸🇬 Singapore</h3>
-        <p class="text-gray-600">Server cepat & stabil di Asia.</p>
-        <a href="/ssh-account.html" class="text-blue-600 font-semibold hover:underline">Buat Akun</a>
-      </div>
-      <div class="bg-white shadow rounded-xl p-6 text-center">
-        <h3 class="text-xl font-semibold">🇺🇸 United States</h3>
-        <p class="text-gray-600">Server kencang untuk akses global.</p>
-        <a href="/ssh-account.html" class="text-blue-600 font-semibold hover:underline">Buat Akun</a>
-      </div>
-      <div class="bg-white shadow rounded-xl p-6 text-center">
-        <h3 class="text-xl font-semibold">🇩🇪 Germany</h3>
-        <p class="text-gray-600">Server Eropa dengan kecepatan tinggi.</p>
-        <a href="/ssh-account.html" class="text-blue-600 font-semibold hover:underline">Buat Akun</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Statistik Server -->
-  <section class="container mx-auto px-6 py-12">
-    <h2 class="text-2xl font-bold mb-6 text-center">📊 Statistik Server</h2>
-    <div class="bg-white shadow rounded-xl p-6">
-      <canvas id="serverChart"></canvas>
-    </div>
-  </section>
-
-  <!-- Floating WA Button -->
-  <a href="https://wa.me/6281214726068" class="floating-wa" target="_blank" title="Chat Admin">💬</a>
-
   <footer class="bg-light text-dark text-center py-4 mt-4">
-    <p>© 2025 ADIJAYA STORE VPN | Semua Hak Dilindungi</p>
+    <p>© 2025 ADIJAYA VPN</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    const toggleBtn = document.getElementById('toggleTheme');
-    const htmlTag = document.documentElement;
-    toggleBtn.addEventListener('click', () => {
-      if (htmlTag.getAttribute('data-bs-theme') === 'light') {
-        htmlTag.setAttribute('data-bs-theme', 'dark');
-        toggleBtn.textContent = "☀️";
-      } else {
-        htmlTag.setAttribute('data-bs-theme', 'light');
-        toggleBtn.textContent = "🌙";
-      }
-    });
-
     async function loadStats() {
-      try {
-        const res = await fetch("server-stats.json?ts=" + new Date().getTime());
-        const data = await res.json();
-        const labels = Object.keys(data.servers);
-        const values = Object.values(data.servers);
-        const ctx = document.getElementById("serverChart").getContext("2d");
-        new Chart(ctx, {
-          type: "bar",
-          data: {
-            labels: labels,
-            datasets: [{
-              label: "Jumlah Akun Aktif",
-              data: values,
-              backgroundColor: "rgba(37, 99, 235, 0.6)"
-            }]
-          },
-          options: { responsive: true, scales: { y: { beginAtZero: true } } }
-        });
-      } catch (err) {
-        console.error("Gagal load server-stats.json", err);
-      }
+      const res = await fetch("server-stats.json");
+      const data = await res.json();
+      const ctx = document.getElementById("serverChart").getContext("2d");
+      new Chart(ctx, {
+        type: "bar",
+        data: { labels: Object.keys(data.servers), datasets: [{ label:"Akun Aktif", data: Object.values(data.servers) }] }
+      });
     }
     loadStats();
   </script>
 </body>
-    </html>
+</html>

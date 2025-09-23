@@ -1,14 +1,1 @@
-{
-  "updated_at": "2025-09-22 12:00:00",
-  "servers": {
-    "Singapore": 320,
-    "Japan": 210,
-    "United States": 450,
-    "Germany": 180,
-    "Netherlands": 230,
-    "Brazil": 150,
-    "India": 280,
-    "United Kingdom": 260,
-    "Australia": 190
-  }
-}
+{'servers': {'Singapore': 20, 'USA': 15, 'Germany': 10}}
