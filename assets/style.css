@@ -37,11 +37,15 @@ nav.custom-nav a:hover {
 
 /* Hero section */
 .hero {
-  background: linear-gradient(120deg, #1abc9c, #16a085);
+  background: linear-gradient(135deg, #007bff, #6610f2);
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 6rem 20px 60px; /* atas lebih besar agar tidak ketimpa navbar */
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 2rem;
 }
+
+
 
 .hero h1 {
   font-size: 2.5rem;
