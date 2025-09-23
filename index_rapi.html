@@ -112,9 +112,6 @@
 </nav>
 
 
-
-
-
   <!-- Navbar -->
   
 
@@ -394,30 +391,6 @@
     </div>
   </footer>
 
-
-<script>
-  const toggleBtn = document.getElementById("toggleTheme");
-  const html = document.documentElement;
-
-  // Load theme dari localStorage
-  if (localStorage.getItem("theme") === "dark") {
-    html.setAttribute("data-bs-theme", "dark");
-    toggleBtn.textContent = "☀️";
-  }
-
-  toggleBtn.addEventListener("click", () => {
-    if (html.getAttribute("data-bs-theme") === "dark") {
-      html.setAttribute("data-bs-theme", "light");
-      localStorage.setItem("theme", "light");
-      toggleBtn.textContent = "🌙";
-    } else {
-      html.setAttribute("data-bs-theme", "dark");
-      localStorage.setItem("theme", "dark");
-      toggleBtn.textContent = "☀️";
-    }
-  });
-</script>
-
 </body>
 </html>
 
@@ -440,29 +413,5 @@
       }
     });
   </script>
-
-<script>
-  const toggleBtn = document.getElementById("toggleTheme");
-  const html = document.documentElement;
-
-  // Load theme dari localStorage
-  if (localStorage.getItem("theme") === "dark") {
-    html.setAttribute("data-bs-theme", "dark");
-    toggleBtn.textContent = "☀️";
-  }
-
-  toggleBtn.addEventListener("click", () => {
-    if (html.getAttribute("data-bs-theme") === "dark") {
-      html.setAttribute("data-bs-theme", "light");
-      localStorage.setItem("theme", "light");
-      toggleBtn.textContent = "🌙";
-    } else {
-      html.setAttribute("data-bs-theme", "dark");
-      localStorage.setItem("theme", "dark");
-      toggleBtn.textContent = "☀️";
-    }
-  });
-</script>
-
 </body>
 </html>

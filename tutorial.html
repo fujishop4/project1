@@ -42,14 +42,31 @@
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="ssh-account.html">SSH Account</a>
-  <a href="tutorial.html" class="active">Tutorial</a>
-  <a href="blog.html">Blog</a>
-  <a href="support.html">Support</a>
-  <a href="about.html">About</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="/">ADIJAYA VPN</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/ssh-account.html">SSH Account</a></li>
+        <li class="nav-item"><a class="nav-link" href="/tutorial.html">Tutorial</a></li>
+        <li class="nav-item"><a class="nav-link" href="/blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="/support.html">Support</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kuota">Kuota VPN</a></li>
+        <li class="nav-item"><a class="nav-link" href="#konfig">Konfig</a></li>
+        <li class="nav-item"><a class="nav-link" href="#aktif">Masa Aktif</a></li>
+        <li class="nav-item"><a class="nav-link" href="#unli">Unli Bizz</a></li>
+      </ul>
+      <button id="toggleTheme" class="btn btn-outline-light ms-3">🌙</button>
+    </div>
+  </div>
 </nav>
+
+
+
 
 <div class="container">
   <h1>Tutorial</h1>
@@ -71,6 +88,30 @@
 <footer>
   <p>© 2025 ADIJAYA VPN. All Rights Reserved.</p>
 </footer>
+
+
+<script>
+  const toggleBtn = document.getElementById("toggleTheme");
+  const html = document.documentElement;
+
+  // Load theme dari localStorage
+  if (localStorage.getItem("theme") === "dark") {
+    html.setAttribute("data-bs-theme", "dark");
+    toggleBtn.textContent = "☀️";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    if (html.getAttribute("data-bs-theme") === "dark") {
+      html.setAttribute("data-bs-theme", "light");
+      localStorage.setItem("theme", "light");
+      toggleBtn.textContent = "🌙";
+    } else {
+      html.setAttribute("data-bs-theme", "dark");
+      localStorage.setItem("theme", "dark");
+      toggleBtn.textContent = "☀️";
+    }
+  });
+</script>
 
 </body>
 </html>

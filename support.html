@@ -13,13 +13,7 @@
   <header class="bg-white shadow sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center p-4">
       <h1 class="text-xl font-bold text-blue-600">ADIJAYA VPN</h1>
-      <nav class="space-x-6">
-        <a href="/" class="hover:text-blue-600">Home</a>
-        <a href="/ssh-account.html" class="hover:text-blue-600">SSH Account</a>
-        <a href="/tutorial.html" class="hover:text-blue-600">Tutorial</a>
-        <a href="/blog.html" class="hover:text-blue-600">Blog</a>
-        <a href="/support.html" class="hover:text-blue-600 font-semibold">Support</a>
-      </nav>
+      
     </div>
   </header>
 
@@ -120,6 +114,30 @@
       <p>© 2025 ADIJAYA VPN. All rights reserved.</p>
     </div>
   </footer>
+
+
+<script>
+  const toggleBtn = document.getElementById("toggleTheme");
+  const html = document.documentElement;
+
+  // Load theme dari localStorage
+  if (localStorage.getItem("theme") === "dark") {
+    html.setAttribute("data-bs-theme", "dark");
+    toggleBtn.textContent = "☀️";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    if (html.getAttribute("data-bs-theme") === "dark") {
+      html.setAttribute("data-bs-theme", "light");
+      localStorage.setItem("theme", "light");
+      toggleBtn.textContent = "🌙";
+    } else {
+      html.setAttribute("data-bs-theme", "dark");
+      localStorage.setItem("theme", "dark");
+      toggleBtn.textContent = "☀️";
+    }
+  });
+</script>
 
 </body>
 </html>
