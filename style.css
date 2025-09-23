@@ -1,0 +1,116 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navigasi */
+nav.custom-nav {
+  background: #222;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav.custom-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav.custom-nav a:hover {
+  color: #1abc9c;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  color: white;
+  text-align: center;
+  padding: 6rem 20px 60px; /* atas lebih besar agar tidak ketimpa navbar */
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 2rem;
+}
+
+
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Container umum */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* List */
+.container ul {
+  list-style: disc inside;
+  margin: 15px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  nav.custom-nav {
+    flex-direction: column;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* --- Bootstrap Navbar Fix --- */
+.navbar {
+  z-index: 1030;
+}
+
+.navbar-brand img {
+  height: 32px;
+}
+
+/* Hero section padding supaya tidak ketimpa navbar */
+.hero {
+  padding-top: 6rem;
+}
+
+
+/* Navbar link hover effect */
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #bbbbbb;
+}
